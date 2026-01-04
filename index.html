@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ping Pong OOP</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100vh;
+    }
+    body {
+      background: #ECEFF1; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    canvas {
+      background: #0c3966; 
+    }
+    #playPauseBtn {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 24px;
+      font-size: 18px;
+      width: 100px;
+      
+      background: #4CAF50;
+      color: white;
+      border: none;
+      
+      cursor: pointer;
+     
+    }
+    #playPauseBtn:hover {
+      background: #45a049;
+    }
+    #playPauseBtn.paused {
+      background: #2196F3;
+    }
+    #playPauseBtn.paused:hover {
+      background: #0b7dda;
+    }
+  </style>
+</head>
+<body>
+  <button id="playPauseBtn">Play</button>
+  <canvas id="game" width="800" height="400"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
