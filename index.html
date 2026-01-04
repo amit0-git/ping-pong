@@ -44,10 +44,36 @@
     #playPauseBtn.paused:hover {
       background: #0b7dda;
     }
+    #deviceNote {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        white-space: nowrap;
+      }
+      #instructions {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+        color: #666;
+        text-align: center;
+        line-height: 1.6;
+      }
   </style>
 </head>
 <body>
   <button id="playPauseBtn">Play</button>
+  
+  <p id="instructions">
+    <strong>Controls:</strong><br>
+    Left Paddle: W (up) / S (down)<br>
+    Right Paddle: ↑ (up) / ↓ (down)
+  </p>
   <canvas id="game" width="800" height="400"></canvas>
 
   <script src="game.js"></script>
